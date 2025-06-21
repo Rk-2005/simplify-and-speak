@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Simplify & Speak",
+  "version": "1.0",
+  "description": "Right-click any text to simplify and speak it.",
+  "permissions": ["contextMenus", "scripting", "activeTab"],
+  "host_permissions": ["http://localhost:3000/"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
